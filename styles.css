@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background: #ee0979;  /* fallback for old browsers */
+    background: linear-gradient(to right,  #fd0250 0%, #f401dd 100%);
+
+}
+
+.todo-container{
+    position: fixed;
+    top: calc( (100vh - 29rem)/2 );
+    left: calc( (100vw - 24rem)/2 );
+    height: 29rem;
+    width: 24rem;
+    background-color: white;
+    border-radius: 11px;
+}
+
+.header-container{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    border-radius: 11px 11px 0px 0px;
+}
+
+.task-list{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding-top: 0.7rem;
+    font-size: 1.2rem;
+    color: #ee0272;
+    background-color: #e560c1;
+    border-radius: 11px 0px 0px 0px;
+}
+
+.completed-list{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding-top: 0.7rem;
+    font-size: 1.2rem;
+    color: #ee0272;
+    background-color: #e560c1;
+    border-radius: 0px 11px 0px 0px;
+}
+
+.list-container{
+    height: calc( 27rem - 12% );
+    border-radius:  0px 0px 11px 11px;
+}
+
+.add_btn-container{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    bottom: -2rem;
+    left: calc( (24rem - 4rem)/2 );
+    box-shadow: 0px 5px 15px 0px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 3rem;
+    color: #ee0272;
+    border: none;
+    outline: none;    
+}
+
+ul{
+    padding: 0rem 1.5rem;
+    width: 100%;
+}
+
+#checkbox-input{
+    width: 1.2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 10%;
+    width: 100%;
+}
+
+.list-content{
+    outline: none;
+    height: 100%;
+    width: 80%;
+    border: 1px solid;
+    padding: 1px 2px;
+    margin: 0px;
+}
+
+.delete-btn{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    color: #ee0272;
+    cursor: pointer;
+}
+
+.active{
+    background-color: white;
+}
